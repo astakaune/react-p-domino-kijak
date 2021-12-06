@@ -1,0 +1,492 @@
+.plate {
+  width: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.plate .left-half,
+.plate .right-half {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 50px;
+  height: 45px;
+  margin: auto;
+  border: 3px solid #222;
+}
+
+.plate .left-half:before,
+.plate .right-half:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.plate .left-half {
+  border-right: 1.8px solid #222;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.plate .right-half {
+  border-left: 1.8px solid #222;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.plate .dot-container {
+  position: relative;
+  right: 5px;
+  width: 48px;
+  height: 40px;
+}
+
+.plate .dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.plate .dot-container-1 .dot {
+  top: 15px;
+  left: 23px;
+}
+
+.plate .dot-container-2 {
+  top: 5px;
+  left: 5px;
+}
+
+.plate .dot-container-2 .dot:last-child {
+  left: 24px;
+  top: 10px;
+}
+
+.plate .dot-container-3 {
+  top: 5px;
+  left: 5px;
+}
+
+.plate .dot-container-3 .dot:nth-child(2) {
+  left: 12px;
+}
+
+.plate .dot-container-3 .dot:last-child {
+  left: 24px;
+}
+
+.plate .dot-container-4 .dot:nth-child(1) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-4 .dot:nth-child(2) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-4 .dot:nth-child(3) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-4 .dot:nth-child(4) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(1) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-5 .dot:nth-child(2) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(3) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-5 .dot:nth-child(4) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(5) {
+  top: -25px;
+  left: 23px;
+}
+
+.plate .dot-container-6 .dot {
+  float: right;
+  margin: 5px 1.6px;
+}
+
+.button {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.button.red:after {
+  background-color: crimson;
+}
+
+.button.pink:after {
+  background-color: pink;
+}
+
+.button.yellow:after {
+  background-color: yellow;
+}
+
+.button.green:after {
+  background-color: #cee5d0;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.button.red:before {
+  background-color: #960e29;
+}
+
+.button.pink:before {
+  background-color: #ff748c;
+}
+
+.button.yellow:before {
+  background-color: #b3b300;
+}
+
+.button.green:before {
+  background-color: #9ccaa0;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+/* optional reset for presentation */
+* {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+span {
+  display: block;
+  margin-top: 2rem;
+  font-size: .7rem;
+  color: #777;
+}
+
+span a {
+  font-size: .7rem;
+  color: #999;
+  text-decoration: underline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.App.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App.col.top {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.border {
+  border: 3px solid darkorange;
+  padding: 5px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.nice-border {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid paleturquoise;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nice-border:hover {
+  border-color: pink;
+}
+
+.nice-border span {
+  margin: 0;
+}
+
+.domino {
+  position: relative;
+}
+
+.domino__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.domino__header {
+  height: 85px;
+  background-color: #f3f0d7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.domino__header h1 {
+  color: #ff7878;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 40px;
+}
+
+.domino__header__sort {
+  padding: 0 10px;
+}
+
+.domino__header__sort h2 {
+  color: #ff7878;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 13px;
+}
+
+.domino__header__sort select {
+  margin: 0 13px;
+  outline: none;
+  border: 2px solid #cee5d0;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.domino__create {
+  background-color: #f3f0d7;
+  width: 100%;
+  border-top: 2px solid #e0c097;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.domino__create__domino {
+  padding: 11px;
+}
+
+.domino__create__selects select {
+  margin: 0 13px;
+  outline: none;
+  border: 2px solid #cee5d0;
+  font-size: 26px;
+  border-radius: 4px;
+}
+
+.domino__create h2 {
+  margin: 0;
+  color: #cee5d0;
+}
+
+.domino__modal {
+  position: absolute;
+  top: 40vh;
+  z-index: 5000;
+}
+
+.domino__edit {
+  background-color: #f3f0d7;
+  width: 100%;
+  border: 5px solid #cee5d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 100px;
+  position: relative;
+}
+
+.domino__edit__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ff7878;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.domino__edit__domino {
+  padding: 11px;
+}
+
+.domino__edit__selects select {
+  margin: 0 13px;
+  outline: none;
+  border: 2px solid #cee5d0;
+  font-size: 26px;
+  border-radius: 4px;
+}
+
+.domino__edit h2 {
+  margin: 0;
+  color: #cee5d0;
+}
+
+.domino__bag {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #e0c097;
+}
+
+.domino__bag .plate {
+  margin: 14px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

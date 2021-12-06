@@ -1,0 +1,133 @@
+.plate {
+  width: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.plate .left-half,
+.plate .right-half {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 50px;
+  height: 45px;
+  margin: auto;
+  border: 3px solid #222;
+}
+
+.plate .left-half:before,
+.plate .right-half:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.plate .left-half {
+  border-right: 1.8px solid #222;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.plate .right-half {
+  border-left: 1.8px solid #222;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.plate .dot-container {
+  position: relative;
+  right: 5px;
+  width: 48px;
+  height: 40px;
+}
+
+.plate .dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.plate .dot-container-1 .dot {
+  top: 15px;
+  left: 23px;
+}
+
+.plate .dot-container-2 {
+  top: 5px;
+  left: 5px;
+}
+
+.plate .dot-container-2 .dot:last-child {
+  left: 24px;
+  top: 10px;
+}
+
+.plate .dot-container-3 {
+  top: 5px;
+  left: 5px;
+}
+
+.plate .dot-container-3 .dot:nth-child(2) {
+  left: 12px;
+}
+
+.plate .dot-container-3 .dot:last-child {
+  left: 24px;
+}
+
+.plate .dot-container-4 .dot:nth-child(1) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-4 .dot:nth-child(2) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-4 .dot:nth-child(3) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-4 .dot:nth-child(4) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(1) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-5 .dot:nth-child(2) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(3) {
+  left: 12px;
+  top: 5px;
+}
+
+.plate .dot-container-5 .dot:nth-child(4) {
+  top: -5px;
+  left: 34px;
+}
+
+.plate .dot-container-5 .dot:nth-child(5) {
+  top: -25px;
+  left: 23px;
+}
+
+.plate .dot-container-6 .dot {
+  float: right;
+  margin: 5px 1.6px;
+}
+/*# sourceMappingURL=domino.css.map */

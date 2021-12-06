@@ -44,3 +44,10 @@ React savyje turi 2 folderius:
 
 6) mySQL:
 	- npm install mysql
+
+7) Express:
+	- npm install express
+
+
+Sources used:
+	https://colorhunt.co/palettes/
